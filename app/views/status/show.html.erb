@@ -1,0 +1,17 @@
+Status:
+</br>
+Your Car: <%= @car.make_and_model_string %>
+</br>
+Lights are: <%= @car.lights %>
+</br>
+<form action="/status/lights_button" method="get">
+  <input type="submit" value="Lights"/>
+</form>
+
+Speed is: <%= @car.speed_status %>
+
+<form action="/status/accelerate_button" method="get">
+  <input type="submit" value="accelerate"/>
+</form>
+
+<!-- <%= link_to 'Back', 'javascript:history.go(-1);' %> -->
